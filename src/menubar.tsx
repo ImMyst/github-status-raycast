@@ -1,9 +1,8 @@
 import { MenuBarExtra, open } from "@raycast/api";
+import { GITHUB_STATUS_URL } from "./utils/constants";
+import { useGithubStatus, githubFilteredList, listItemIcon } from "./utils/utils";
 
-import { GITHUB_STATUS_URL } from "./constants";
-import { githubFilteredList, listItemIcon, useGithubStatus } from "./utils";
-
-export default function MenuCommand(): JSX.Element {
+export default function GithubStatusMenuBar(): JSX.Element {
   const { data, isLoading } = useGithubStatus();
 
   return (

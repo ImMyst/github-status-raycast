@@ -5,8 +5,8 @@ import relativeTime from "dayjs/plugin/relativeTime";
 import utc from "dayjs/plugin/utc";
 import timezone from "dayjs/plugin/timezone";
 
-import { githubFilteredList, listItemIcon, useGithubStatus } from "./utils";
-import { GITHUB_STATUS_URL } from "./constants";
+import { githubFilteredList, listItemIcon, useGithubStatus } from "./utils/utils";
+import { GITHUB_STATUS_URL } from "./utils/constants";
 
 dayjs.extend(relativeTime);
 dayjs.extend(utc);
